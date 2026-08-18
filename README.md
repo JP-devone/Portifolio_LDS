@@ -17,7 +17,7 @@ O desenvolvimento será realizado utilizando **React com TypeScript**, com o **V
 - Antônio Rabelo
 - Diogo Augusto
 - João Pedro Bomfim
-- Sophia Melo 
+- Sofia Melo 
 
 ---
 
