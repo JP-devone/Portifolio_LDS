@@ -38,7 +38,7 @@ A página inicial terá como objetivo apresentar rapidamente o desenvolvedor e d
 
 ### Projetos
 
-![Wireframe - Projetos](wireframes/02-projetos.png)
+![Wireframe - Projetos](imagens/PROJECTS.png)
 
 A seção **Projetos** será utilizada para apresentar os principais trabalhos desenvolvidos.
 
