@@ -18,7 +18,7 @@ A partir dele, será desenvolvido o protótipo inicial do front-end.
 
 ### Página inicial e Sobre Mim
 
-![Wireframe - Home e Sobre](wireframes/01-home-sobre.png)
+![Wireframe - Home e Sobre](imagens/ABOUTME.png)
 
 A primeira parte do wireframe apresenta a identidade visual principal do portfólio.
 
@@ -59,7 +59,7 @@ A organização em cards permitirá adicionar novos projetos futuramente sem alt
 
 ### Experiência e Habilidades
 
-![Wireframe - Experiência e Habilidades](wireframes/03-experiencia-habilidades.png)
+![Wireframe - Experiência e Habilidades](imagens/EXPERIENCE.png)
 
 A seção de **Experiência e Habilidades** terá como objetivo apresentar as principais competências técnicas do desenvolvedor.
 
@@ -82,7 +82,7 @@ As tecnologias serão organizadas por categorias e poderão ser representadas ut
 
 ### Contato
 
-![Wireframe - Contato](wireframes/04-contato.png)
+![Wireframe - Contato](imagens/CONTACT.png)
 
 A seção **Contato** será utilizada para permitir que visitantes entrem em contato com o desenvolvedor.
 
