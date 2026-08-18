@@ -8,6 +8,17 @@ O projeto parte de um **wireframe de alta fidelidade desenvolvido no Figma**, qu
 
 A proposta é transformar o protótipo visual em uma aplicação web funcional, responsiva e com navegação entre suas principais seções.
 
+O desenvolvimento será realizado utilizando **React com TypeScript**, com o **Vite** como ferramenta de construção e execução do projeto.
+
+---
+
+## Integrantes
+
+- Antonio Rabelo
+- Diogo Augusto
+- João Pedro Bonfim
+- Sophia
+
 ---
 
 ## Wireframe
