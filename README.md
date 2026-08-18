@@ -14,10 +14,10 @@ O desenvolvimento será realizado utilizando **React com TypeScript**, com o **V
 
 ## Integrantes
 
-- Antonio Rabelo
+- Antônio Rabelo
 - Diogo Augusto
-- João Pedro Bonfim
-- Sophia
+- João Pedro Bomfim
+- Sophia Melo 
 
 ---
 
