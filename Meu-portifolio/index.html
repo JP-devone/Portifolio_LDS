@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Menu Lateral Flutuante -->
+    <nav class="side-menu">
+        <ul>
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#about">Sobre Mim</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção Principal (Hero) -->
+    <section id="hero" class="section-hero">
+        <h1 class="bg-text">DEVELOPER</h1>
+        <img src="assets/images/sua-foto.png" alt="Sua Foto" class="hero-img">
+    </section>
+
+    <!-- Seção Sobre Mim -->
+    <section id="about" class="section-light">
+        <h2>ABOUT ME <span class="subtitle">SOBRE MIM</span></h2>
+        <div class="split-columns">
+            <div class="column">
+                <h3>ABOUT ME</h3>
+                <p>Text in English highlighting your education, area of expertise, and goals...</p>
+            </div>
+            <div class="column">
+                <h3>SOBRE MIM</h3>
+                <p>Breve apresentação em português, destacando sua formação e área de atuação...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projects" class="section-gray">
+        <h2>PROJECTS <span class="subtitle">PROJETOS</span></h2>
+        <p>Get to know a little about my projects...</p>
+        <div class="grid-2x2">
+            <!-- Estrutura de um card de projeto -->
+            <div class="project-card">
+                <div class="project-image-placeholder">Imagem/GIF do Projeto</div>
+                <p>Nome e tecnologias</p>
+                <a href="#">Link do GitHub</a>
+            </div>
+            <div class="project-card">Projeto 2</div>
+            <div class="project-card">Projeto 3</div>
+            <div class="project-card">Projeto 4</div>
+        </div>
+    </section>
+
+    <!-- Seção Experiências -->
+    <section id="experience" class="section-dark">
+        <h2>EXPERIENCE <span class="subtitle">EXPERIÊNCIAS</span></h2>
+        <h3 class="blue-text">Check out my skills</h3>
+        <div class="skills-grid">
+            <!-- Aqui entrarão os ícones e descrições das suas experiências profissionais e ferramentas -->
+            <div class="skill-item">Front-End Development</div>
+            <div class="skill-item">Back-End Development</div>
+            <div class="skill-item">Cloud & Deployment</div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact" class="section-light">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Got a project in mind?<br><em>Let's talk</em></h2>
+                <p>📧 seuemail@exemplo.com</p>
+                <p>📱 (31) 99999-9999</p>
+                <!-- Ícones do LinkedIn e GitHub entrarão aqui -->
+            </div>
+            <div class="contact-form">
+                <form action="mailto:seuemail@exemplo.com" method="post" enctype="text/plain">
+                    <input type="text" name="nome" placeholder="To" required>
+                    <textarea name="mensagem" placeholder="Message" rows="5" required></textarea>
+                    <button type="submit" class="btn-send">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
