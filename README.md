@@ -30,7 +30,9 @@ A partir dele, será desenvolvido o protótipo inicial do front-end.
 ### Página inicial e Sobre Mim
 ![Wireframe - Home](imagens/CAPAHOME.png)
 
-![Wireframe - Sobre mim](imagens/ABOUTME.png)
+
+
+![Wireframe - Sobre mim](imagens/ABOUTME1.png)
 
 A primeira parte do wireframe apresenta a identidade visual principal do portfólio.
 
