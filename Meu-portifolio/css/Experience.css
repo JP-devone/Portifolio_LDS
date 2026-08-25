@@ -1,0 +1,125 @@
+/* =========================================================
+   SEÇÃO EXPERIÊNCIAS E HABILIDADES (EXPERIENCE.CSS)
+========================================================= */
+
+#experience {
+    padding: 80px 60px;
+    background-color: #000000;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.experience-header {
+    margin-bottom: 50px;
+}
+
+.experience-header h2 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 700;
+    letter-spacing: -1px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.experience-header .divider {
+    color: #666;
+    font-weight: 300;
+}
+
+.experience-header .subtitle-lang {
+    font-weight: 300;
+    color: #a0a0a0;
+    font-size: clamp(1.2rem, 2.5vw, 2.2rem);
+    letter-spacing: 0px;
+}
+
+.blue-text {
+    color: #1a73e8; /* Tom de azul do protótipo */
+    font-size: clamp(1.8vw, 2.5rem, 3rem);
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+/* Container de 2 colunas */
+.skills-container-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.skills-column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Card individual da habilidade */
+.skill-card {
+    background-color: #121215;
+    border: 1px solid #222;
+    border-radius: 16px;
+    padding: 30px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-3px);
+    border-color: #1a73e8;
+}
+
+/* Círculos de ícones das tecnologias */
+.tech-icons-circle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.icon-circle {
+    width: 48px;
+    height: 48px;
+    background-color: #1c1c21;
+    border: 1px solid #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.icon-circle:hover {
+    background-color: #2c2c35;
+}
+
+.skill-card h4 {
+    font-size: 1.25rem;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 0.95rem;
+    color: #8c8c94;
+    line-height: 1.6;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 900px) {
+    .skills-container-grid {
+        grid-template-columns: 1fr;
+    }
+    #experience {
+        padding: 40px 20px;
+    }
+}
+
+.icon-circle i {
+    font-size: 22px;
+}
