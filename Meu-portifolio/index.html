@@ -6,6 +6,9 @@
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/Home.css">
+    <link rel="stylesheet" href="css/Projetos.css">
+    <link rel="stylesheet" href="css/Sobremim.css">
+    <link href="https://fonts.cdnfonts.com/css/garet" rel="stylesheet">
 </head>
 <body>
 
@@ -14,25 +17,33 @@
         <ul>
             <li>
                 <a href="#about">
-                    <span class="menu-icon">♙</span>
+                    <div class="menu-icon">
+                        <img src="assets/Vector.png" alt="Sobre mim">
+                    </div>
                     <span class="menu-label">Sobre Mim</span>
                 </a>
             </li>
             <li>
                 <a href="#projects">
-                    <span class="menu-icon">▣</span>
+                    <div class="menu-icon">
+                        <img src="assets/File.png" alt="Sobre mim">
+                    </div>
                     <span class="menu-label">Projetos</span>
                 </a>
             </li>
             <li>
                 <a href="#experience">
-                    <span class="menu-icon">◎</span>
+                    <div class="menu-icon">
+                        <img src="assets/medalha.png" alt="Sobre mim">
+                    </div>
                     <span class="menu-label">Experiências</span>
                 </a>
             </li>
             <li>
                 <a href="#contact">
-                    <span class="menu-icon">⌕</span>
+                    <div class="menu-icon">
+                        <img src="assets/celular.png" alt="Sobre mim">
+                    </div>
                     <span class="menu-label">Contato</span>
                 </a>
             </li>
@@ -46,37 +57,143 @@
     </section>
 
     <!-- Seção Sobre Mim -->
-    <section id="about" class="section-light">
-        <h2>ABOUT ME <span class="subtitle">SOBRE MIM</span></h2>
-        <div class="split-columns">
-            <div class="column">
-                <h3>ABOUT ME</h3>
-                <p>Text in English highlighting your education, area of expertise, and goals...</p>
-            </div>
-            <div class="column">
-                <h3>SOBRE MIM</h3>
-                <p>Breve apresentação em português, destacando sua formação e área de atuação...</p>
-            </div>
+        <section id="about" class="section__about">
+
+        <div class="about__header">
+            <h1>ABOUT ME</h1>
+            <span></span>
+            <h2>SOBRE MIM</h2>
         </div>
+
+        <div class="about__content">
+
+            <div class="about__column">
+                <h2>ABOUT ME</h2>
+                <div class="about__line"></div>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisque faucibus ex sapien vitae pellentesque sem placerat.
+                    In id cursus mi pretium tellus duis convallis. Tempus leo eu
+                    aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus
+                    nec metus bibendum egestas. Iaculis massa nisl malesuada
+                    lacinia integer nunc posuere. Ut hendrerit semper vel class
+                    aptent taciti sociosqu. Ad litora torquent per conubia nostra
+                    inceptos himenaeos.
+                </p>
+            </div>
+
+            <div class="about__column">
+                <h2>SOBRE MIM</h2>
+                <div class="about__line"></div>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisque faucibus ex sapien vitae pellentesque sem placerat.
+                    In id cursus mi pretium tellus duis convallis. Tempus leo eu
+                    aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus
+                    nec metus bibendum egestas. Iaculis massa nisl malesuada
+                    lacinia integer nunc posuere. Ut hendrerit semper vel class
+                    aptent taciti sociosqu. Ad litora torquent per conubia nostra
+                    inceptos himenaeos.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="about__decoration"></div>
+
     </section>
 
     <!-- Seção Projetos -->
-    <section id="projects" class="section-gray">
-        <h2>PROJECTS <span class="subtitle">PROJETOS</span></h2>
-        <p>Get to know a little about my projects...</p>
-        <div class="grid-2x2">
-            <!-- Estrutura de um card de projeto -->
-            <div class="project-card">
-                <div class="project-image-placeholder">Imagem/GIF do Projeto</div>
-                <p>Nome e tecnologias</p>
-                <a href="#">Link do GitHub</a>
+    <section id="projects" class="section__projetos">
+        <p class="header__start">Get to know a little about my projects...</p>
+        <br>
+        <br>
+        <div class="header__projetos">
+            <h1>PROJECTS</h1>
+            <span></span>
+            <h2>PROJETOS</h2>
+        </div>
+    
+        <div class="container">
+            <div class="card__container">
+
+                <article class="card__article">
+                    <img src="assets/chatgpt_imagem.png"
+                        alt="Chat GPT"
+                        class="card__img">
+
+                    <div class="card__data">
+                        <span class="card__description"></span>
+
+                        <h2 class="card__title">
+                            Clone do ChatGPT
+                        </h2>
+
+                        <a href="#" class="card__button">
+                            Saiba mais
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card__article">
+                    <img src="assets/gemini_foto.jpg"
+                        alt="Gemini"
+                        class="card__img">
+
+                    <div class="card__data">
+                        <span class="card__description"></span>
+
+                        <h2 class="card__title">
+                            Clone do Gemini
+                        </h2>
+
+                        <a href="#" class="card__button">
+                            Saiba mais
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card__article">
+                    <img src="assets/pinterest_foto.jpg"
+                        alt="Pinterest"
+                        class="card__img">
+
+                    <div class="card__data">
+                        <span class="card__description"></span>
+
+                        <h2 class="card__title">
+                            Clone do Pinterest
+                        </h2>
+
+                        <a href="#" class="card__button">
+                            Saiba mais
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card__article">
+                    <img src="assets/X-logo.webp"
+                        alt="X"
+                        class="card__img">
+
+                    <div class="card__data">
+                        <span class="card__description"></span>
+
+                        <h2 class="card__title">
+                            Clone da rede social X
+                        </h2>
+
+                        <a href="#" class="card__button">
+                            Saiba mais
+                        </a>
+                    </div>
+                </article>
+
             </div>
-            <div class="project-card">Projeto 2</div>
-            <div class="project-card">Projeto 3</div>
-            <div class="project-card">Projeto 4</div>
         </div>
     </section>
-
     <!-- Seção Experiências -->
     <section id="experience" class="section-dark">
         <h2>EXPERIENCE <span class="subtitle">EXPERIÊNCIAS</span></h2>
