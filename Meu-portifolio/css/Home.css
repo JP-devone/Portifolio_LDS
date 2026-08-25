@@ -1,0 +1,499 @@
+/* =========================================================
+   RESET BÁSICO
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================================
+   HOMEPAGE / HERO
+========================================================= */
+
+.section-hero {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    min-height: 600px;
+
+    background: #99999c;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   BOTÃO HOMEPAGE
+========================================================= */
+
+.homepage-button {
+    position: absolute;
+
+    top: -30px;
+    left: 0;
+
+    z-index: 30;
+
+    width: 62px;
+    height: 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #d8d8d8;
+
+    color: #111;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    border-radius: 2px;
+
+    transition: background 0.2s ease;
+}
+
+.homepage-button:hover {
+    background: #ffffff;
+}
+
+/* =========================================================
+   TEXTO "DEVELOPER"
+========================================================= */
+
+.bg-text {
+    position: absolute;
+
+    z-index: 1;
+
+    top: 62%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    margin: 0;
+
+    width: max-content;
+
+    color: rgba(255, 255, 255, 0.60);
+
+    font-size: clamp(100px, 13vw, 240px);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-weight: 700;
+
+    line-height: 0.8;
+
+    letter-spacing: -10px;
+
+    white-space: nowrap;
+
+    user-select: none;
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTAINER DA FOTO
+========================================================= */
+
+.hero-image-container {
+    position: absolute;
+
+    z-index: 5;
+
+    left: 50%;
+    bottom: -5px;
+
+    transform: translateX(-50%);
+
+    width: min(55vw, 900px);
+    height: 88%;
+
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+/* =========================================================
+   FOTO
+========================================================= */
+
+.hero-img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    object-position: center bottom;
+
+    transform: translateY(80px);
+
+    filter:
+        grayscale(100%)
+        contrast(115%)
+        brightness(92%);
+}
+
+
+/* =========================================================
+   MENU LATERAL
+========================================================= */
+
+.side-menu {
+    position: fixed;
+
+    z-index: 100;
+
+    top: 50%;
+    right: 0px;
+
+    transform: translateY(-50%);
+
+    width: 157px;
+    height: 575px;
+
+    padding: 22px 0;
+
+    background: #dedede;
+
+    border-radius: 25px 0 0 25px;
+}
+
+
+/* =========================================================
+   LISTA DO MENU
+========================================================= */
+
+.side-menu ul {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: space-around;
+}
+
+
+/* =========================================================
+   ITEM DO MENU
+========================================================= */
+
+.side-menu li {
+    width: 100%;
+}
+
+
+/* =========================================================
+   LINKS DO MENU
+========================================================= */
+
+.side-menu a {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    color: #222;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: transform 0.2s ease;
+}
+
+.side-menu a:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   CÍRCULO DOS ÍCONES
+========================================================= */
+
+.menu-icon {
+    width: 71px;
+    height: 71px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #303037;
+
+    color: #fff;
+
+    font-size: 30px;
+
+    line-height: 1;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.side-menu a:hover .menu-icon {
+    background: #1e1e22;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   TEXTO DO MENU
+========================================================= */
+
+.menu-label {
+    font-size: 14px;
+    color: #222;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .section-hero {
+        width: calc(100% - 40px);
+
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .developer-credit {
+        left: 70px;
+        top: 80px;
+
+        font-size: 15px;
+    }
+
+    .side-menu {
+        right: 20px;
+
+        width: 135px;
+        height: 500px;
+    }
+
+    .menu-icon {
+        width: 60px;
+        height: 60px;
+
+        font-size: 26px;
+    }
+
+    .menu-label {
+        font-size: 12px;
+    }
+
+    .hero-image-container {
+        width: 60vw;
+        height: 82%;
+    }
+
+    .bg-text {
+        font-size: 12vw;
+        letter-spacing: -7px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    body {
+        background: #99999c;
+    }
+
+    .section-hero {
+        width: 100%;
+        height: 100vh;
+
+        min-height: 600px;
+
+        margin: 0;
+
+        border: none;
+    }
+
+
+    /* -----------------------------------------
+       CRÉDITO
+    ----------------------------------------- */
+
+    .developer-credit {
+        top: 65px;
+        left: 25px;
+
+        font-size: 13px;
+    }
+
+
+    /* -----------------------------------------
+       TEXTO
+    ----------------------------------------- */
+
+    .bg-text {
+        top: 40%;
+
+        font-size: 19vw;
+
+        letter-spacing: -4px;
+    }
+
+
+    /* -----------------------------------------
+       FOTO
+    ----------------------------------------- */
+
+    .hero-image-container {
+        width: 100%;
+
+        height: 72%;
+
+        bottom: 70px;
+    }
+
+
+    /* -----------------------------------------
+       MENU
+    ----------------------------------------- */
+
+    .side-menu {
+        position: fixed;
+
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        top: auto;
+
+        transform: none;
+
+        width: 100%;
+        height: 90px;
+
+        padding: 7px 10px;
+
+        border-radius: 22px 22px 0 0;
+    }
+
+    .side-menu ul {
+        flex-direction: row;
+
+        justify-content: space-around;
+    }
+
+    .side-menu li {
+        width: 25%;
+    }
+
+    .side-menu a {
+        gap: 4px;
+    }
+
+    .menu-icon {
+        width: 43px;
+        height: 43px;
+
+        font-size: 20px;
+    }
+
+    .menu-label {
+        font-size: 9px;
+    }
+
+
+    /* -----------------------------------------
+       BOTÃO HOMEPAGE
+    ----------------------------------------- */
+
+    .homepage-button {
+        top: 10px;
+        left: 15px;
+    }
+}
+
+
+/* =========================================================
+   CELULARES PEQUENOS
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .developer-credit {
+        top: 60px;
+        left: 20px;
+
+        font-size: 12px;
+    }
+
+    .bg-text {
+        font-size: 20vw;
+    }
+
+    .hero-image-container {
+        height: 67%;
+        bottom: 70px;
+    }
+
+    .side-menu {
+        height: 85px;
+    }
+
+    .menu-icon {
+        width: 39px;
+        height: 39px;
+
+        font-size: 18px;
+    }
+
+    .menu-label {
+        font-size: 8px;
+    }
+}
