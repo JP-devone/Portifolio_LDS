@@ -1,0 +1,136 @@
+/*---------------------------------
+ABOUT
+----------------------------------*/
+
+.section__about {
+    position: relative;
+    min-height: 100vh;
+    padding: 7rem 10% 6rem;
+
+    background-color: #dcdcdc;
+
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+/*---------------------------------
+ABOUT HEADER
+----------------------------------*/
+
+.about__header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    position: relative;
+    z-index: 2;
+
+    margin-bottom: 7rem;
+}
+
+.about__header h1 {
+    margin: 0;
+
+    font-size: clamp(3.5rem, 5vw, 5.5rem);
+    font-weight: 300;
+    line-height: 1;
+
+    color: #050505;
+}
+
+.about__header h2 {
+    margin: 0;
+
+    font-size: clamp(1.5rem, 2.2vw, 2.2rem);
+    font-weight: 300;
+
+    color: #050505;
+}
+
+.about__header span {
+    width: 1px;
+    height: 58px;
+
+    background-color: #111;
+}
+
+/*---------------------------------
+ABOUT CONTENT
+----------------------------------*/
+
+.about__content {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 8rem;
+}
+
+.about__column {
+    max-width: 540px;
+}
+
+.about__column h2 {
+    margin: 0;
+
+    font-size: 2.6rem;
+    font-weight: 300;
+
+    color: #050505;
+}
+
+.about__line {
+    width: 100%;
+    height: 2px;
+
+    margin-top: 0.8rem;
+    margin-bottom: 3.8rem;
+
+    background-color: #111;
+}
+
+.about__column p {
+    margin: 0;
+
+    font-size: 1.25rem;
+    line-height: 1.7;
+    font-weight: 400;
+
+    color: #171717;
+}
+
+/*---------------------------------
+DECORATION
+----------------------------------*/
+
+.about__decoration {
+    position: absolute;
+
+    width: 480px;
+    height: 480px;
+
+    right: -130px;
+    top: 80px;
+
+    border: 60px solid rgba(255, 255, 255, 0.18);
+    border-radius: 50%;
+
+    z-index: 1;
+}
+
+.about__decoration::after {
+    content: "";
+
+    position: absolute;
+
+    width: 480px;
+    height: 480px;
+
+    left: -180px;
+    top: 480px;
+
+    border: 60px solid rgba(255, 255, 255, 0.18);
+    border-radius: 50%;
+}
