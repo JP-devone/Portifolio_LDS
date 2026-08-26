@@ -102,31 +102,6 @@ body {
 
 
 /* -----------------------------------------------------------
-   FOTO
------------------------------------------------------------ */
-
-.hero-img {
-    position: absolute;
-    z-index: 2;
-
-    left: 50%;
-    bottom: -5px;
-    transform: translateX(-50%);
-
-    width: min(75vw, 1200px);
-    height: 110%;
-
-    object-fit: contain;
-    object-position: center bottom;
-
-    filter:
-        grayscale(100%)
-        contrast(115%)
-        brightness(92%);
-}
-
-
-/* -----------------------------------------------------------
    MENU LATERAL
 ----------------------------------------------------------- */
 

@@ -101,6 +101,76 @@ ABOUT CONTENT
     color: #171717;
 }
 
+.about__details {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.about__detail-card {
+    padding: 1.5rem 0;
+    border-top: 2px solid #111111;
+}
+
+.about__detail-card > span {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: #66666b;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+}
+
+.about__detail-card h3 {
+    margin-bottom: 0.5rem;
+    color: #111111;
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+.about__detail-card p {
+    margin-bottom: 0.4rem;
+    color: #2d2d2f;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.about__detail-card small {
+    color: #68686d;
+    font-size: 0.9rem;
+}
+
+.about__links {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2.2rem;
+}
+
+.about__links a,
+.about__links span {
+    padding: 0.7rem 1rem;
+    border: 1px solid rgba(17, 17, 17, 0.4);
+    color: #111111;
+    font-size: 0.92rem;
+    text-decoration: none;
+}
+
+.about__links a {
+    transition: background 160ms ease, color 160ms ease;
+}
+
+.about__links a:hover {
+    background: #111111;
+    color: #ffffff;
+}
+
 /*---------------------------------
 DECORATION
 ----------------------------------*/
@@ -133,4 +203,64 @@ DECORATION
 
     border: 60px solid rgba(255, 255, 255, 0.18);
     border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+    .section__about {
+        padding: 5rem 7% 5rem;
+    }
+
+    .about__header {
+        margin-bottom: 4rem;
+    }
+
+    .about__content {
+        grid-template-columns: 1fr;
+        row-gap: 4rem;
+    }
+
+    .about__column {
+        max-width: none;
+    }
+
+    .about__line {
+        margin-bottom: 2rem;
+    }
+
+    .about__details {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 4rem;
+    }
+
+    .about__decoration {
+        opacity: 0.45;
+    }
+}
+
+@media (max-width: 560px) {
+    .about__header {
+        align-items: flex-end;
+        gap: 1rem;
+    }
+
+    .about__header h1 {
+        font-size: 2.8rem;
+    }
+
+    .about__header h2 {
+        font-size: 1.1rem;
+    }
+
+    .about__header span {
+        height: 42px;
+    }
+
+    .about__column h2 {
+        font-size: 2rem;
+    }
+
+    .about__column p {
+        font-size: 1rem;
+    }
 }
