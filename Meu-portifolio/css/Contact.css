@@ -7,14 +7,10 @@
     min-height: 100vh;
     padding: 0 2vw 46px;
     overflow: hidden;
-    background: #050505;
+    background: #d4d4d4;
 }
 
-.contact-toolbar {
-    display: flex;
-    align-items: center;
-    height: 45px;
-}
+
 
 .contact-toolbar span {
     display: inline-flex;
@@ -248,7 +244,7 @@
     justify-content: flex-start;
     gap: clamp(80px, 10vw, 210px);
     max-width: 1680px;
-    margin: 86px auto 0;
+    margin: 100px auto 0;
     color: #111111;
 }
 

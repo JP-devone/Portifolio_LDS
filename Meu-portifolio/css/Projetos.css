@@ -33,6 +33,7 @@ CARD
 }
 .card__img{
     width: 328px;
+    height: 230px;
     border-radius: 1.5rem;
 }
 .card__data{
