@@ -65,89 +65,47 @@ body {
 }
 
 /* -----------------------------------------------------------
-   TEXTO "DEVELOPER"
+   TEXTO "DEVELOPER" (Passando por cima da foto com letras claras)
 ----------------------------------------------------------- */
-
 .bg-text {
     position: absolute;
-
-    z-index: 1;
-
-    top: 70%;
+    z-index: 5;
+    top: 50%;
     left: 50%;
-
     transform: translate(-50%, -50%);
-
     margin: 0;
-
     width: max-content;
-
-    color: rgba(255, 255, 255, 0.60);
-
-    font-size: clamp(200px, 13vw, 240px);
+    color: rgba(255, 255, 255, 0.35);
+    
+    font-size: clamp(120px, 14vw, 210px); /* Diminuiu um pouco o tamanho máximo */
+    letter-spacing: -6px; /* Puxou as letras mais para perto uma da outra */
 
     font-family: Arial, Helvetica, sans-serif;
-
     font-weight: 700;
-
     line-height: 0.8;
-
-    letter-spacing: -10px;
-
     white-space: nowrap;
-
     user-select: none;
     pointer-events: none;
 }
 
 
 /* -----------------------------------------------------------
-   FOTO
+   FOTO (Maior e preenchendo melhor o espaço)
 ----------------------------------------------------------- */
-
 .hero-img {
     position: absolute;
-    z-index: 2;
-
+    z-index: 2; /* Fica atrás do texto, mas na frente do fundo cinza */
     left: 50%;
-    bottom: -5px;
+    bottom: -10px;
     transform: translateX(-50%);
-
-    width: min(75vw, 1200px);
-    height: 110%;
-
+    width: min(95vw, 1350px); /* Aumenta a largura máxima para a foto ficar bem grandona */
+    height: 105%; /* Ocupa mais altura da tela */
     object-fit: contain;
     object-position: center bottom;
-
     filter:
         grayscale(100%)
         contrast(115%)
         brightness(92%);
-}
-
-
-/* -----------------------------------------------------------
-   MENU LATERAL
------------------------------------------------------------ */
-
-.side-menu {
-    position: fixed;
-
-    z-index: 100;
-
-    top: 50%;
-    right: 0px;
-
-    transform: translateY(-50%);
-
-    width: 157px;
-    height: 575px;
-
-    padding: 22px 0;
-
-    background: #dedede;
-
-    border-radius: 25px 0 0 25px;
 }
 
 
