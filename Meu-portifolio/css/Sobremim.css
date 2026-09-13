@@ -36,6 +36,9 @@ ABOUT HEADER
     line-height: 1;
 
     color: #050505;
+    animation: appear 5s linear;
+    animation-timeline: appear view();
+    animation-range: appear entry 0% cover;
 }
 
 .about__header h2 {
@@ -45,6 +48,9 @@ ABOUT HEADER
     font-weight: 300;
 
     color: #050505;
+    animation: appear 5s linear;
+    animation-timeline: appear view();
+    animation-range: appear entry 0% cover;
 }
 
 .about__header span {
@@ -52,6 +58,9 @@ ABOUT HEADER
     height: 58px;
 
     background-color: #111;
+    animation: appear 5s linear;
+    animation-timeline: appear view();
+    animation-range: appear entry 0% cover;
 }
 
 /*---------------------------------
@@ -70,6 +79,9 @@ ABOUT CONTENT
 
 .about__column {
     max-width: 540px;
+    animation: appear 5s linear;
+    animation-timeline: appear view();
+    animation-range: appear entry 0% cover;
 }
 
 .about__column h2 {

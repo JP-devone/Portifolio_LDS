@@ -7,17 +7,34 @@
     scroll-behavior: smooth;
 }
 
-/* Menu Lateral Flutuante */
-.side-menu {
+/* Menu lateral direito*/
+.menu-container {
     position: fixed;
-    right: 20px;
+    right: -140px;
     top: 50%;
     transform: translateY(-50%);
+    width: 80px;
+    height: 250px;
+    z-index: 1000;
+}
+
+/* Menu escondido */
+.side-menu {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
     background: #fff;
     padding: 20px;
-    border-radius: 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    z-index: 1000;
+    border-radius: 30px 0 0 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    transition: right 0.4s ease;
+    animation: menuPeek 1.5s ease;
+}
+
+.menu-container:hover .side-menu {
+    right: 140px;
 }
 
 .side-menu ul {
@@ -32,6 +49,24 @@
     color: #333;
     font-size: 12px;
 }
+@keyframes menuPeek {
+    0% {
+        right: 0;
+    }
+
+    35% {
+        right: 100px;
+    }
+
+    55% {
+        right: 100px;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
 
 /* Seções Gerais */
 section {
